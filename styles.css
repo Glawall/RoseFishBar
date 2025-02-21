@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    /* Darker background */
+    color: white;
+}
+
+header {
+    background-color: #141414;
+    /* Even darker header */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-space {
+    width: 150px;
+    height: 80px;
+    background-color: #2F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.contact-delivery {
+    text-align: right;
+}
+
+.delivery-buttons a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.3s;
+}
+
+.delivery-buttons a:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+.uber-eats,
+.deliveroo {
+    background-color: #243C3C;
+}
+
+.menu-container {
+    max-width: 1000px;
+    /* Increased width for two columns */
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.menu-container h1 {
+    grid-column: 1 / -1;
+    /* Make title span both columns */
+}
+
+.menu-section {
+    margin-bottom: 30px;
+    background-color: #141414;
+    /* Darker sections */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    padding: 5px 0;
+}
+
+.menu-item span {
+    font-size: 1.1em;
+    color: white;
+}
+
+.opening-times {
+    background-color: #141414;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    /* Make opening times span both columns */
+}
+
+.times p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+    }
+}
